@@ -25,7 +25,6 @@
     "sass-loader": "^6.0.6",
     "scroll-to-element": "^2.0.0",
     "simplegrid": "^1.0.2",
-    "skeleton-css": "^2.0.4",
     "style-loader": "^0.19.0",
     "url-loader": "^0.6.2",
     "val-loader": "^1.1.0",
