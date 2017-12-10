@@ -1,6 +1,6 @@
-import 'skeleton-css/css/normalize.css'
-import 'skeleton-css/css/skeleton.css'
+import 'simplegrid/simple-grid.scss'
 import './style.less'
+import './index.html'
 
 import scroll from 'scroll-to-element'
 

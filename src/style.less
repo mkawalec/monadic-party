@@ -1,8 +1,12 @@
-@color-1: #D1F2A5;
-@color-2: #EFFAB4;
-@color-3: #FFC48C;
-@color-4: #FF9F80;
-@color-5: #F56991;
+@color-1: #A79C8E;
+@color-2: #F8ECC9;
+@color-3: #F1BBBA;
+@color-4: #EB9F9F;
+@color-5: #6B5344;
+
+html, body {
+  font-family: 'Lato', sans-serif;
+}
 
 .body {
   @media (max-width: 550px) {
@@ -20,13 +24,30 @@ a {
     padding-top: 50px;
     padding-bottom: 50px;
     min-height: 75vh;
+    color: #fff;
 
-    img { width: 100%; }
+    h1 { text-align: center; text-transform: uppercase; }
+    h3 { text-align: center }
+
+    img { width: 100%; max-height: 500px;}
+
+    .columns {
+      text-align: center;
+
+      &:hover {
+        background: #000;
+      }
+    }
+
+    a {
+      color: #fff;
+      text-transform: uppercase;
+    }
 
     @media (max-width: 550px) {
       margin: 0;
       width: 100%;
-      height: 100vh;
+      min-height: 100vh;
       overflow: hidden;
 
       img { 
@@ -50,9 +71,6 @@ a {
 
 .speakers {
   background-color: @color-3;
-  .row {
-    margin-bottom: 25px;
-  }
 
   .container .column {
     margin-bottom: 25px;
