@@ -5,7 +5,7 @@ module.exports = {
   entry: './index.js',
   output: {
     path: __dirname + "/dist",
-    filename: "bundle.js"
+    filename: "[name].js"
   },
   module: {
     loaders: [
@@ -32,10 +32,6 @@ module.exports = {
     { 
       test: /\.(jpg|png)$/, 
       loader: [ "url-loader?limit=10000" ] 
-    },
-    { 
-      test: /\.html/, 
-      loader: 'file-loader?name=[name].[ext]' 
     }
     ]
   },
