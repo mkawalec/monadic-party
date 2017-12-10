@@ -1,0 +1,81 @@
+@color-1: #D1F2A5;
+@color-2: #EFFAB4;
+@color-3: #FFC48C;
+@color-4: #FF9F80;
+@color-5: #F56991;
+
+.body {
+  @media (max-width: 550px) {
+    font-size: 2em;
+  }
+}
+
+a {
+  cursor: pointer;
+}
+
+.header {
+  background-color: @color-1;
+  .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 75vh;
+
+    img { width: 100%; }
+
+    @media (max-width: 550px) {
+      margin: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+
+      img { 
+        width: 140%;
+        left: -20%;
+        position: relative;
+      }
+    }
+ }
+}
+
+.about-us {
+  background-color: @color-2;
+  .container {
+
+    min-height: 100vh;
+    padding: 5px;
+    font-size: 1.2em;
+  }
+}
+
+.speakers {
+  background-color: @color-3;
+  .row {
+    margin-bottom: 25px;
+  }
+
+  .container .column {
+    margin-bottom: 25px;
+
+    img {
+      width: 100%;
+    }
+
+    .bio {
+      text-align: justify;
+    }
+
+    @media (max-width: 550px) {
+    }
+  }
+}
+
+.call-for-speakers {
+  background-color: @color-4;
+  min-height: 50vh;
+} 
+  
+.sign-up {
+  background-color: @color-5;
+  min-height: 50vh;
+}
