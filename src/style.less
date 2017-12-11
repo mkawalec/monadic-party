@@ -1,7 +1,7 @@
 @color-1: #fff;
 @color-2: #FFF3CF;
 @color-3: #FFDEDE;
-@color-4: #EB9F9F;
+@color-4: #fff;
 @color-5: #F7E9C6;
 @color-dark: #868787;
 @color-darker: #656666;
@@ -135,15 +135,25 @@ a {
   background-color: @color-4;
   min-height: 50vh;
   padding-top: 20px;
+  padding-bottom: 20px;
 
-  h1 {
+  h1, h2, h4 {
     text-align: center;
     color: #4C4D4D;
+    font-family: 'Share Tech Mono', monospace;
+  }
+
+  h2 a {
+    border: 1px solid #333447;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #868687;
+    color: #fff;
     font-family: 'Share Tech Mono', monospace;
   }
 } 
   
 .sign-up {
   background-color: @color-5;
-  min-height: 80vh;
+  min-height: 50vh;
 }
