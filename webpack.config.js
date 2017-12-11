@@ -1,4 +1,5 @@
 const webpack = require('webpack')
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   context: __dirname + "/src",
@@ -19,15 +20,15 @@ module.exports = {
     },
     {
       test: /\.css$/,
-      loader: 'style-loader!css-loader'
+      loader: ExtractTextPlugin.extract("css-loader")
     },
     {
       test: /\.less$/,
-      loader: 'style-loader!css-loader!less-loader'
+      loader: ExtractTextPlugin.extract("css-loader!less-loader")
     },
     {
       test: /\.scss$/,
-      loader: 'style-loader!css-loader!sass-loader'
+      loader: ExtractTextPlugin.extract("css-loader!sass-loader")
     },
     { 
       test: /\.(jpg|png)$/, 
@@ -38,7 +39,8 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-  })
+  }),
+    new ExtractTextPlugin('[name].css')
   ],
   devServer: {
     host: '0.0.0.0',
