@@ -46,7 +46,16 @@ a {
     }
     h3 { text-align: center }
 
-    img { width: 336px; margin-left: calc(~"50% - 168px");}
+    img { 
+      width: 336px; 
+      margin-left: calc(~"50% - 168px");
+
+
+      @media (max-width: @mobile-width) {
+        width: 80%;
+        margin-left: 10%;
+      }
+    }
 
     .row {
       background-color: @color-dark;
