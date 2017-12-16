@@ -112,15 +112,27 @@ a {
 .speakers {
   background-color: @color-3;
 
+  .container {
+    padding-top: 21px;
+  }
+
   .container .column {
+    margin-top: 18px;
     margin-bottom: 25px;
 
     img {
-      width: 100%;
+      width: 60%; 
+      margin-left: 20%;
     }
 
     .name {
-      margin-bottom: 15px;
+      margin-top: 15px;
+
+      & * { font-family: inherit; }
+
+      .first { color: @title-first; }
+      .second { color: @title-second; }
+
     }
 
     .bio {
@@ -146,13 +158,14 @@ a {
 
   h1 {
     margin-bottom: 0;
+    color: #333447;
   }
 
   h2 a {
     border: 1px solid #333447;
     padding: 10px;
     text-decoration: none;
-    background-color: #868687;
+    background-color: #333447;
     color: #fff;
     font-family: 'Share Tech Mono', monospace;
   }
@@ -165,8 +178,19 @@ a {
 .sign-up {
   background-color: @color-5;
   min-height: 50vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   .email {
     color: @color-darker;
+    text-align: center;
+  }
+
+  iframe {
+    height: 500px;
+
+    @media (max-width: @mobile-width) {
+      height: 630px;
+    }
   }
 }
