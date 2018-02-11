@@ -11,7 +11,7 @@ import scroll from 'scroll-to-element'
   });
 
 var countdownField = document.querySelector('.timer .countdown');
-var announcementTime = 1518350400;
+var announcementTime = 1519560000;
 
 function pad(text) {
   text = text.toString();
