@@ -1,5 +1,6 @@
 const webpack = require('webpack')
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const path = require('path')
 
 module.exports = {
   context: __dirname + "/src",
@@ -43,7 +44,7 @@ module.exports = {
     new ExtractTextPlugin('[name].css')
   ],
   devServer: {
-    host: '0.0.0.0',
-    disableHostCheck: true
+    port: 8080,
+    contentBase: path.join(__dirname, "dist")
   }
 }

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "mkdir dist; cp -r src/* dist && webpack",
-    "dev": "mkdir dist; cp -r src/* dist && webpack --watch"
+    "dev": "mkdir dist; cp -r src/* dist && webpack-dev-server"
   },
   "author": "Michal Kawalec <michal@monad.cat>",
   "license": "ISC",
