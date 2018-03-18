@@ -45,7 +45,13 @@ a {
       text-transform: uppercase;
       font-size: 2.3rem
     }
-    h3 { text-align: center }
+    h3 {
+      text-align: center;
+      &.promo {
+        font-size: 1.5em;
+      }
+    }
+
 
     img {
       width: 336px;
@@ -79,6 +85,7 @@ a {
     a {
       color: #fff;
       text-transform: uppercase;
+      text-decoration: none;
     }
 
     @media (max-width: @mobile-width) {
@@ -173,6 +180,12 @@ a {
     margin-bottom: 0;
   }
 
+  @media (min-width: @mobile-width) {
+    h4 {
+      min-height: 54px;
+    }
+  }
+
   .timer {
     text-align: center;
     width: 100%;
@@ -183,7 +196,7 @@ a {
   }
 }
 
-.call-for-speakers {
+#schedule {
   background-color: @color-4;
   min-height: 50vh;
   padding-top: 20px;
@@ -195,22 +208,68 @@ a {
     font-family: 'Share Tech Mono', monospace;
   }
 
-  h1 {
+  .day-name {
+    text-align: center;
     margin-bottom: 0;
-    color: #333447;
+    float: left;
+    width: 100%;
+
+    &.spacer {
+      border-top: 2px solid @color-dark;
+      padding-top: 15px;
+    }
   }
 
-  h2 a {
-    border: 1px solid #333447;
-    padding: 10px;
-    text-decoration: none;
-    background-color: #333447;
-    color: #fff;
-    font-family: 'Share Tech Mono', monospace;
+  .schedule-footer {
+    color: #4C4D4D;
+    font-weight: 400;
   }
 
-  h4 {
-    margin-bottom: 50px;
+  .day {
+
+    @media (min-width: @mobile-width) {
+      &.advanced {
+        margin-left: -1%;
+      }
+    }
+
+    .slot {
+      float: left;
+      width: 100%;
+      padding: 15px 5px;
+      font-size: 1.2em;
+      border-bottom: solid 1px rgba(0,0,0,0.13);
+
+      &.noborder {
+        border-bottom: 0 none #000;
+      }
+
+      time {
+        float: left;
+        width: 20%;
+        opacity: 0.6;
+      }
+
+      .topic, .org {
+        color: #4C4D4D;
+        width: 80%;
+        margin-left: 20%;
+
+        .name {
+          width: 100%;
+          font-weight: 800;
+          color: @title-first;
+        }
+      }
+
+      .topic {
+        min-height: 112px;
+      }
+
+      .org {
+        opacity: 0.8;
+      }
+    }
   }
 }
 
