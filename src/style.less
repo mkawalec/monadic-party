@@ -180,6 +180,12 @@ a {
     margin-bottom: 0;
   }
 
+  @media (min-width: @mobile-width) {
+    h4 {
+      min-height: 54px;
+    }
+  }
+
   .timer {
     text-align: center;
     width: 100%;
@@ -214,6 +220,11 @@ a {
     }
   }
 
+  .schedule-footer {
+    color: #4C4D4D;
+    font-weight: 400;
+  }
+
   .day {
 
     @media (min-width: @mobile-width) {
@@ -239,7 +250,7 @@ a {
         opacity: 0.6;
       }
 
-      .topic {
+      .topic, .org {
         color: #4C4D4D;
         width: 80%;
         margin-left: 20%;
@@ -249,6 +260,14 @@ a {
           font-weight: 800;
           color: @title-first;
         }
+      }
+
+      .topic {
+        min-height: 112px;
+      }
+
+      .org {
+        opacity: 0.8;
       }
     }
   }
