@@ -46,3 +46,33 @@ function countDown() {
 
 //countDown();
 //setInterval(countDown, 1000);
+
+function initBurger(menuNode) {
+  let opened = false;
+  const hamburger = menuNode.querySelector('.hamburger')
+
+  function toggleOpened() {
+    if (opened === false) {
+      menuNode.style['animation-name'] = ''
+      menuNode.classList.remove('closed')
+      menuNode.classList.add('opened')
+    } else {
+      menuNode.style['animation-name'] = 'close'
+      menuNode.classList.add('closed')
+      menuNode.classList.remove('opened')
+    }
+
+    opened = !opened;
+  }
+
+
+  hamburger.addEventListener('click', toggleOpened)
+
+  menuNode.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+      toggleOpened()
+    }
+  })
+}
+
+initBurger(document.querySelector('.menu-bar'));
