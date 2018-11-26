@@ -232,49 +232,65 @@ a {
  }
 }
 
+h4.external-btn,h2.external-btn {
+  text-align: center;
+
+  a {
+    border: 1px solid #333447;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #333447;
+    color: #fff;
+    font-family: 'Share Tech Mono', monospace;
+  }
+}
+
+.title {
+  font-family: 'Share Tech Mono', monospace;
+  color: @color-darker;
+  margin-top: 35px;
+
+  & * { font-family: inherit; }
+
+  .first { color: @title-first; }
+  .second { color: @title-second; }
+
+  &.left {
+    text-align: left;
+  }
+  &.right {
+    text-align: right;
+  }
+}
+
 .about-us {
   .container {
     min-height: 100vh;
     padding: 5px;
     font-size: 1.2em;
     margin-bottom: 25px;
-
-    .title {
-      font-family: 'Share Tech Mono', monospace;
-      color: @color-darker;
-      margin-top: 35px;
-
-      & * { font-family: inherit; }
-
-      .first { color: @title-first; }
-      .second { color: @title-second; }
-
-      &.left {
-        text-align: left;
-      }
-      &.right {
-        text-align: right;
-      }
-    }
-
-    h4 a {
-      border: 1px solid #333447;
-      padding: 10px;
-      text-decoration: none;
-      background-color: #333447;
-      color: #fff;
-      font-family: 'Share Tech Mono', monospace;
-    }
   }
 }
 
 .speakers {
   padding-bottom: 20px;
+  background-color: @color-1;
+
+  h3 {
+    text-align: center;
+    margin-bottom: 2px;
+  }
+
+  .bio {
+    font-size: 1em;
+    text-align: center;
+    text-justify: inter-character;
+  }
 }
 
-.speakers, .topics {
-  background-color: #c1b6b9;
 
+.speakers, .topics {
   .container {
     padding-top: 21px;
   }

@@ -7,7 +7,7 @@ import scroll from 'scroll-to-element'
   .map(link => [link, link.getAttribute('scroll-to')])
   .filter(([_, scrollTo]) => scrollTo)
   .map(([link, scrollTo]) => {
-    link.addEventListener('click', () => scroll(scrollTo));
+    link.addEventListener('click', () => scroll(scrollTo, {offset: -70}));
   });
 
 var countdownField = document.querySelector('.timer .countdown');
