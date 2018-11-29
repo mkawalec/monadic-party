@@ -8,7 +8,7 @@
 @color-darker: #656666;
 @title-first: #ec003a;
 @title-second: #f37721;
-@mobile-width: 550px;
+@mobile-width: 580px;
 @menu-bar-height: 70px;
 @page-width: 1160px;
 
@@ -49,6 +49,12 @@ a {
     }
   }
 
+  @media (min-width: @page-width) {
+    .items {
+      margin-left: calc(~"50% -" @page-width / 2);
+    }
+  }
+
   @media (min-width: @mobile-width) {
     display: flex;
     .hamburger {
@@ -64,7 +70,6 @@ a {
       flex-direction: row;
       height: @menu-bar-height;
       width: @page-width;
-      margin-left: calc(~"50% -" @page-width / 2);
 
       .item { 
         margin: auto;
