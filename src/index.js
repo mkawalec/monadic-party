@@ -11,7 +11,7 @@ import scroll from 'scroll-to-element'
   });
 
 var countdownField = document.querySelector('.timer .countdown');
-var announcementTime = 2519560000;
+var announcementTime = 1553706043;
 
 function pad(text) {
   text = text.toString();
@@ -44,12 +44,11 @@ function countDown() {
   }
 }
 
-//countDown();
-//setInterval(countDown, 1000);
+countDown();
+setInterval(countDown, 1000);
 
-function initBurger(menuNode) {
+function initOpenable(menuNode, toggleNode) {
   let opened = false;
-  const hamburger = menuNode.querySelector('.hamburger')
 
   function toggleOpened() {
     if (opened === false) {
@@ -65,8 +64,7 @@ function initBurger(menuNode) {
     opened = !opened;
   }
 
-
-  hamburger.addEventListener('click', toggleOpened)
+  toggleNode.addEventListener('click', toggleOpened)
 
   menuNode.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
@@ -75,4 +73,12 @@ function initBurger(menuNode) {
   })
 }
 
-initBurger(document.querySelector('.menu-bar'));
+const menuBar = document.querySelector('.menu-bar');
+initOpenable(menuBar, menuBar.querySelector('.hamburger'));
+
+
+// The talks open/close
+const talks = document.querySelectorAll('#talk-titles .talk');
+talks.forEach(talk => {
+  initOpenable(talk.querySelector('.details'), talk.querySelector('.header'));
+});

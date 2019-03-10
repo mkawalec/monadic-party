@@ -504,3 +504,111 @@ h4.external-btn,h2.external-btn {
   padding-top: 50px;
   padding-bottom: 100px;
 }
+
+.talks {
+  h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .timer {
+    text-align: center;
+    width: 100%;
+
+    & * {
+      font-family: 'Share Tech Mono', monospace ;
+    }
+  }
+
+  margin-bottom: 15px;
+
+  #talk-titles .talk {
+    overflow: hidden;
+    @media (max-width: @mobile-width) {
+      margin-bottom: 30px;
+    }
+
+    .header {
+      display: flex;
+      cursor: pointer;
+
+      @media (max-width: @mobile-width) {
+        flex-direction: column;
+      }
+      flex-direction: row;
+
+      h4 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      .author {
+        margin-right: 10px;
+      }
+
+      .title {
+        margin-top: 6px;
+      }
+
+      .level {
+        margin-top: 5px;
+        width: 100px;
+      }
+    }
+
+    .details {
+      max-height: 500px;
+      transition: max-height .5s ease-out;
+      transition: padding-bottom .5s ease-out;
+      padding-bottom: 10px;
+      font-weight: 400;
+
+      margin-left: 100px;
+      @media (max-width: @mobile-width) {
+        margin-left: 0;
+      }
+
+      &.closed {
+        max-height: 0;
+        padding-bottom: 0;
+      }
+
+      h4 {
+        margin: 5px 0;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .badge {
+      display: inline-block;
+      padding: .25em .4em;
+      font-size: 75%;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: baseline;
+      border-radius: .25rem;
+    }
+
+    .badge-success {
+      color: #fff;
+      background-color: #28a745;
+    }
+
+    .badge-intermediate {
+      color: #fff;
+      background-color: @title-second;
+    }
+
+    .badge-advanced {
+      color: #fff;
+      background-color: @title-first;
+    }
+  }
+}
