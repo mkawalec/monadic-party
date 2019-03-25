@@ -44,8 +44,8 @@ function countDown() {
   }
 }
 
-countDown();
-setInterval(countDown, 1000);
+//countDown();
+//setInterval(countDown, 1000);
 
 function initOpenable(menuNode, toggleNode) {
   let opened = false;

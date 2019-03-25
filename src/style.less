@@ -505,7 +505,8 @@ h4.external-btn,h2.external-btn {
   padding-bottom: 100px;
 }
 
-.talks {
+#talks {
+
   h1 {
     margin-bottom: 15px;
     text-align: center;
@@ -521,26 +522,31 @@ h4.external-btn,h2.external-btn {
     }
   }
 
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 
   #talk-titles .talk {
     overflow: hidden;
-    @media (max-width: @mobile-width) {
-      margin-bottom: 30px;
-    }
+    margin-bottom: 30px;
 
     .header {
       display: flex;
       cursor: pointer;
 
-      @media (max-width: @mobile-width) {
-        flex-direction: column;
-      }
-      flex-direction: row;
+      flex-direction: column;
 
       h4 {
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      .duration {
+        width: 80px;
+        font-family: 'Share Tech Mono', monospace;
+        color: @color-darker;
+
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: 6px;
       }
 
       .author {
@@ -548,11 +554,11 @@ h4.external-btn,h2.external-btn {
       }
 
       .title {
-        margin-top: 6px;
+        margin-top: 5px;
       }
 
       .level {
-        margin-top: 5px;
+        margin-top: 0px;
         width: 100px;
       }
     }
@@ -563,6 +569,7 @@ h4.external-btn,h2.external-btn {
       transition: padding-bottom .005s ease-out;
       padding-bottom: 10px;
       font-weight: 400;
+      overflow: hidden;
 
       margin-left: 100px;
       @media (max-width: @mobile-width) {
@@ -578,9 +585,18 @@ h4.external-btn,h2.external-btn {
         margin: 5px 0;
       }
 
+      .abstract {
+        margin-bottom: 5px;
+      }
+
       p {
         font-size: 16px;
         line-height: 24px;
+      }
+
+      code {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 15px;
       }
     }
 

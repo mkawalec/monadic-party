@@ -37,7 +37,7 @@
               <a scroll-to='.speakers'>Speakers</a>
           </div>
           <div class='item'>
-              <a scroll-to='.talks'>Talks</a>
+              <a scroll-to='#talks'>Talks</a>
           </div>
           <div class='item'>
               <a scroll-to='.sign-up'>Sign up</a>
@@ -167,21 +167,63 @@
                 </div>
             </div>
 
+            <div class='row'>
+                <div class='col-4 column'>
+                    <img src='/static/horacek.jpg' />
+                    <h3 class='name'><span class='first'>L</span>ibby <span class='second'>H</span>oracek</h3>
+                    <div class='bio'>
+                      Software developer at Position Development in NYC. She maintains several Haskell web applications serving millions of users.
+                    </div>
+                </div>
+                <div class='col-4 column'>
+                    <img src='/static/kinsky.jpg' />
+                    <h3 class='name'><span class='first'>P</span>aul <span class='second'>K</span>insky</h3>
+                    <div class='bio'>
+                      Haskell developer at <a href='http://formation.ai/'>Formation</a>.
+                    </div>
+                </div>
+                <div class='col-4 column'>
+                    <img src='/static/penner.jpg' />
+                    <h3 class='name'><span class='first'>C</span>hris <span class='second'>P</span>enner</h3>
+                    <div class='bio'>
+                      Acro yogi, chiptune artist, programmer.
+                    </div>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-4 column'>
+                    <img src='/static/xavier.jpg' />
+                    <h3 class='name'><span class='first'>A</span>rthur <span class='second'>X</span>avier</h3>
+                    <div class='bio'>
+                      Software engineer writing mainly PureScript and Haskell at <a href='https://www.lumi.com/'>Lumi</a>. 
+                    </div>
+                </div>
+                <div class='col-4 column'>
+                </div>
+                <div class='col-4 column'>
+                    <img src='/static/empty.png' />
+                    <h3 class='name'><span class='first'>Z</span>ans <span class='second'>M</span>ihejevs</h3>
+                    <div class='bio'>
+                      A functional programmer who straddles the boundary between industry and academia. 
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class='talks'>
+    <div id='talks'>
       <div class='container'>
         <h1 class='title'><span class='first'>T</span>alk <span class='second'>T</span>itles</h1>
 
         <div id='talk-titles'>
           <div class='talk'>
             <div class='header'>
+              <h4 class='author'>Christophe Scholliers:</h4> 
+              <h4 class='title'>A project based approach to learning Haskell - <b>6 hours</b></h4>
               <div class='level'>
                 <span class='badge badge-success'>Beginner</span>
               </div>
-              <h4 class='author'>Christophe Scholliers:</h4> 
-              <h4 class='title'>A project based approach to learning Haskell</h4>
             </div>
 
             <div class='details closed'>
@@ -199,11 +241,11 @@
 
           <div class='talk'>
             <div class='header'>
+              <h4 class='author'>Ryan Moore:</h4> 
+              <h4 class='title'>Practical Cryptography with Haskell - <b>6 hours</b></h4>
               <div class='level'>
                 <span class='badge badge-success'>Beginner</span>
               </div>
-              <h4 class='author'>Ryan Moore:</h4> 
-              <h4 class='title'>Practical Cryptography with Haskell</h4>
             </div>
 
             <div class='details closed'>
@@ -221,11 +263,11 @@ Students will spend 6 sessions learning to apply practical Haskell programming t
 
           <div class='talk'>
             <div class='header'>
+              <h4 class='author'>Justin Woo:</h4> 
+              <h4 class='title'>Real World PureScript - <b>2 hours</b></h4>
               <div class='level'>
                 <span class='badge badge-success'>Beginner</span>
               </div>
-              <h4 class='author'>Justin Woo:</h4> 
-              <h4 class='title'>Real World PureScript</h4>
             </div>
 
             <div class='details closed'>
@@ -243,11 +285,11 @@ Justin is a Korean-American living in Helsinki. In his previous life, he was a m
 
           <div class='talk'>
             <div class='header'>
+              <h4 class='author'>Tom Sydney Kerckhove:</h4> 
+              <h4 class='title'>Testing for beginners - <b>6 hours</b></h4>
               <div class='level'>
                 <span class='badge badge-success'>Beginner</span>
               </div>
-              <h4 class='author'>Tom Sydney Kerckhove:</h4> 
-              <h4 class='title'>Testing for beginners</h4>
             </div>
 
             <div class='details closed'>
@@ -265,11 +307,33 @@ Justin is a Korean-American living in Helsinki. In his previous life, he was a m
 
           <div class='talk'>
             <div class='header'>
+              <h4 class='author'>Libby Horacek:</h4> 
+              <h4 class='title'>Learn Haskell by making a website - <b>4 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-success'>Beginner</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                In this workshop, we'll make a simple website and along the way, learn basic Haskell concepts such as data types, type classes, the Maybe type, and the IO type. We'll use the beginner-friendly Fn web framework to create type-safe routes and write handlers for those routes, with views written in the Blaze templating language. The goal will be to show that writing real-world apps in Haskell can be fun and approachable, and to help attendees over some common initial stumbling blocks.
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                Libby is a software developer at Position Development in NYC. She maintains several Haskell web applications serving millions of users.
+              </div>
+            </div>
+          </div>
+
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Oleg Grenrus:</h4> 
+              <h4 class='title'>Nitty-gritty details of programming language implementation - <b>4 hours</b></h4>
               <div class='level'>
                 <span class='badge badge-intermediate'>Intermediate</span>
               </div>
-              <h4 class='author'>Oleg Grenrus:</h4> 
-              <h4 class='title'>Nitty-gritty details of programming language implementation</h4>
             </div>
 
             <div class='details closed'>
@@ -293,11 +357,11 @@ Justin is a Korean-American living in Helsinki. In his previous life, he was a m
 
           <div class='talk'>
             <div class='header'>
+              <h4 class='author'>Alexey Kuleshevich:</h4> 
+              <h4 class='title'>Haskell arrays with massiv - <b>6 hours</b></h4>
               <div class='level'>
                 <span class='badge badge-intermediate'>Intermediate</span>
               </div>
-              <h4 class='author'>Alexey Kuleshevich:</h4> 
-              <h4 class='title'>Haskell arrays with massiv</h4>
             </div>
 
             <div class='details closed'>
@@ -318,11 +382,11 @@ Justin is a Korean-American living in Helsinki. In his previous life, he was a m
 
           <div class='talk'>
             <div class='header'>
+              <h4 class='author'>Laurens Duijvesteijn:</h4> 
+              <h4 class='title'>Haskell for boring software - <b>6 hours</b></h4>
               <div class='level'>
                 <span class='badge badge-intermediate'>Intermediate</span>
               </div>
-              <h4 class='author'>Laurens Duijvesteijn:</h4> 
-              <h4 class='title'>Haskell for boring software</h4>
             </div>
 
             <div class='details closed'>
@@ -343,11 +407,59 @@ coffee: strong.
 
           <div class='talk'>
             <div class='header'>
+              <h4 class='author'>Chris Penner:</h4> 
+              <h4 class='title'>Comonads By Example - <b>4 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-intermediate'>Intermediate</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                <p>This interactive talk series explores the Comonad typeclass while solving real problems. Students are presented with practical examples to ground their understanding and cement their learnings by implementing the things they learn along the way. Git checkpoints are provided so nobody is left behind.  The workshop-style series covers everything from "what's a comonad?" to using comonads for solving real problems, including simulating cellular automata and image processing!</p>
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                <p>Acro yogi, chiptune artist, programmer. I've been writing Haskell for fun for a few years now and enjoy finding practical applications for abstract category theory concepts.</p>
+
+                <p>If you're interested in my <a href='https://chrispenner.ca'>programming blog</a> or <a href='https://github.com/chrispenner'>github profile</a> you can find them here.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Arthur Xavier:</h4> 
+              <h4 class='title'>Type-safe embedded domain-specific languages - <b>4 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-intermediate'>Intermediate</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                <p>Language is everything; it governs our lives: from our thought processes, our communication abilities and our understanding of the world, all the way up to law, politics, logic and programming. All of these domains of human experience are governed by different languages that talk to each other, and so should be your code. Haskell provides all the means necessary—and many more—to easily and safely use embedded small languages that are tailored to specific needs and business domains.</p>
+
+                <p>In this series of lectures and workshops, we will explore the whats, whys and hows of embedded domain-specific languages in Haskell, and how language oriented programing can bring type-safety, composability and simplicity to the development of complex applications.</p>
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                <p>Arthur is a software engineer writing mainly PureScript and Haskell at <a href='https://www.lumi.com/'>Lumi</a>. A researcher by heart, passionate learner and languages aficionado—in all their forms—he is currently on a journey into the deep corners of programming languages and type theory.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Edward Kmett:</h4> 
+              <h4 class='title'>Guanxi - Logic Programming in Haskell - <b>4 hours</b></h4>
               <div class='level'>
                 <span class='badge badge-advanced'>Advanced</span>
               </div>
-              <h4 class='author'>Edward Kmett:</h4> 
-              <h4 class='title'>Guanxi - Logic Programming in Haskell</h4>
             </div>
 
             <div class='details closed'>
@@ -365,11 +477,11 @@ coffee: strong.
 
           <div class='talk'>
             <div class='header'>
+              <h4 class='author'>Krzysztof Gogolewski:</h4> 
+              <h4 class='title'>Linear types - <b>4 hours</b></h4>
               <div class='level'>
                 <span class='badge badge-advanced'>Advanced</span>
               </div>
-              <h4 class='author'>Krzysztof Gogolewski:</h4> 
-              <h4 class='title'>Linear types</h4>
             </div>
 
             <div class='details closed'>
@@ -385,9 +497,51 @@ coffee: strong.
             </div>
           </div>
 
-        </div>
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Paul Kinsky:</h4> 
+              <h4 class='title'>Lazily Diffing Merkle Trees with Recursion Schemes - <b>4 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-advanced'>Advanced</span>
+              </div>
+            </div>
 
-        <h3 class='timer'>More titles released in <span class='countdown'></span></h3>
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                <p>Build a merkle tree type meant to represent directory trees (as used by git, mercurial, etc) using recursion schemes, then use this to implement lazy diffing of arbitrary large merkle trees (real world problem for bigco monorepos), see <a href='https://github.com/pkinsky/merkle-dag-diff'> an example implementation</a>. We will dive into how functor composition can be used to build different merkle tree structures starting from various primitives (Maybe, [], Either a, (,) a, etc) - eg, did you know that <code>type List a = Fix (Compose Maybe ((,) a))</code> and <code>type NonEmptyList a = Fix (Compose ((,) a) Maybe)</code>?</p>
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                Software engineer at Tweag, currently working at implementation of linear types in GHC.
+              </div>
+            </div>
+          </div>
+
+
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Zans Mihejevs:</h4> 
+              <h4 class='title'>Implementing a Dependently Typed Language from Scratch - <b>6 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-advanced'>Advanced</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                <p>In this talk will start with the untyped lambda calculus and gradually build up towards simply typed, system F, system Fω and a dependently typed language. Particular attention will be paid to the parsing and type-checking issues that arise as the language increases in complexity.</p>
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                A functional programmer who straddles the boundary between industry and academia. 
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
