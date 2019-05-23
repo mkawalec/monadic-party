@@ -396,12 +396,6 @@ h4.external-btn,h2.external-btn {
 
   .day {
 
-    @media (min-width: @mobile-width) {
-      &.advanced {
-        margin-left: -1%;
-      }
-    }
-
     .slot {
       float: left;
       width: 100%;
@@ -422,22 +416,40 @@ h4.external-btn,h2.external-btn {
       .part {
         opacity: 0.6;
         font-size: 0.8em;
+        clear: left;
+        float: left;
       }
 
-      .topic, .org {
+      .talk, .org {
         color: #4C4D4D;
         width: 80%;
-        margin-left: 20%;
+        float: left;
 
         .name {
           width: 100%;
           font-weight: 800;
           color: @title-first;
         }
+
+        &.narrow {
+          width: 50%;
+          min-height: 1px;
+        }
       }
 
-      .topic {
-        min-height: 112px;
+      .location-right {
+        float: right;
+        width: 30%;
+      }
+
+      .talk {
+        min-height: 170px;
+      }
+
+      @media (max-width: @mobile-width) {
+        .talk {
+          min-height: 1px;
+        }
       }
 
       .org {
