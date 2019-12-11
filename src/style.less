@@ -503,16 +503,27 @@ h4.external-btn,h2.external-btn {
   padding-top: 50px;
   padding-bottom: 50px;
 
+  @media (max-width: @mobile-width) {
+    min-height: 80vh;
+  }
+
   .email {
     color: @color-darker;
     text-align: center;
+    margin-top: 30px;
+  }
+
+  .eb-container {
+    height: 620px;
+
+    @media (max-width: @mobile-width) {
+      height: 830px;
+    }
   }
 
   iframe {
-    height: 550px;
-
     @media (max-width: @mobile-width) {
-      height: 630px;
+      height: 830px;
     }
   }
 }
