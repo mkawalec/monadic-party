@@ -272,11 +272,14 @@ h4.external-btn,h2.external-btn {
   &.right {
     text-align: right;
   }
+  &.center {
+    text-align: center;
+  }
 }
 
 .about-us {
   .container {
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 5px;
     font-size: 1.2em;
     margin-bottom: 25px;
@@ -301,15 +304,24 @@ h4.external-btn,h2.external-btn {
     margin-bottom: 2px;
   }
 
-  .bio {
-    font-size: 1em;
+}
+
+.organizers {
+  padding-bottom: 20px;
+  background-color: #d4e8ca;
+
+  h3 {
     text-align: center;
-    text-justify: inter-character;
+    margin-bottom: 2px;
+  }
+
+  .bio {
+    padding: 0 20%;
   }
 }
 
 
-.speakers, .topics {
+.speakers, .topics, .organizers {
   .container {
     padding-top: 21px;
   }
@@ -336,6 +348,12 @@ h4.external-btn,h2.external-btn {
       .first { color: @title-first; }
       .second { color: @title-second; }
 
+    }
+
+    .bio {
+      font-size: 1em;
+      text-align: center;
+      text-justify: inter-character;
     }
 
     @media (max-width: @mobile-width) {
