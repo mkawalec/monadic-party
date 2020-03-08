@@ -37,7 +37,7 @@
               <a scroll-to='.speakers'>Speakers</a>
           </div>
           <div class='item'>
-              <a scroll-to='.call-for-speakers'>Call for Speakers</a>
+              <a href='#talks' scroll-to='#talks'>Talks</a>
           </div>
           <div class='item'>
             Previously: 
@@ -189,24 +189,498 @@
             </div>
 
             <div class='row'>
-              <h2 class='wide'>More speakers revealed after the CFP completes</h2>
+                <div class='col-4 column'>
+                    <img src='/static/andrew.jpg' />
+                    <h3 class='name'><span class='first'>A</span>ndrew <span class='second'>L</span>elechenko</h3>
+                    <div class='bio'>
+                      Software developer from London with a strong background in mathematics and computer science
+                    </div>
+                </div>
+                <div class='col-4 column'>
+                    <img src='/static/granin.jpg' />
+                    <h3 class='name'><span class='first'>A</span>lexander <span class='second'>G</span>ranin</h3>
+                    <div class='bio'>
+                      Haskeller, speaker, researcher, author. Independent consultant, Haskell architect
+                    </div>
+                </div>
+                <div class='col-4 column'>
+                    <img src='/static/empty.png' />
+                    <h3 class='name'><span class='first'>M</span>aciej <span class='second'>K</span>owalski</h3>
+                    <div class='bio'>
+                      My passion for programming oscillates between frontend and backend. So I am the middleman
+                    </div>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-4 column'>
+                    <img src='/static/empty.png' />
+                    <h3 class='name'><span class='first'>M</span> Ian <span class='second'>G</span>raham</h3>
+                    <div class='bio'>
+                      15-year game industry veteran and pragmatic functional programmer, currently freelancing in Tokyo
+                    </div>
+                </div>
+                <div class='col-4 column'></div>
+                <div class='col-4 column'>
+                    <img src='/static/empty.png' />
+                    <h3 class='name'><span class='first'>Z</span>ans <span class='second'>M</span>ihejevs</h3>
+                    <div class='bio'>
+                      Functional programmer bridging the gap between programming language research and application
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class='call-for-speakers'>
+    <div id='talks'>
       <div class='container'>
-        <h2 class='title left'><span class='first'>C</span>all for <span class='second'>S</span>peakers</h2>
+        <h1 class='title'><span class='first'>T</span>alks</h1>
 
-        <p>Do you want to lead workshops at the summer school? We would love to invite you to be a speaker at our event.</p>
+        <div id='talk-titles'>
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Ryan Moore:<h4>
+              <h4 class='title'>Fun with applying Applicative - <b>4 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-success'>Beginner</span>
+              </div>
+            </div>
 
-        <p>We are looking for people interested in leading workshops spanning four to six slots on various topics in the Haskell ecosystem. Slots take fifty minutes and can be allocated together or spread over a couple days, depending on your preference. There will be three tracks, a beginners one that caters to programmers that have limited Haskell experience and two for people who are comfortable with the language and want to learn new concepts. We will allocate your talk to a track that fits it best based on your answers on the submission form.</p>
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                <p>With all the love surrounding the mysterious monad sometimes it’s sibling type class Applicative gets left out in the cold. I’m this workshop we will take a deep dive into what it takes to spot an applicative, build our own instances and *apply* our knowledge through the use of two powerful libraries that leverage applicative to parse and validate text.</p>
+              </div>
 
-        <p>Accommodation in a hotel in Poznań and a ticket to the event is covered for all speakers.</p>
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                Ryan Moore works as a software engineer at MX to ensure that all people can have access and ownership of their financial data.  Ryan is passionate about functional programming, experimental, music that’s experimental, mathy or grungy and volunteers teaching refugees coding alongside the Utah State Refugee Education and Training Center.
+              </div>
+            </div>
+          </div>
 
-        <h4>CFP applications closed</h4>
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Tom Sydney Kerckhove:</h4>
+              <h4 class='title'>Real World Haskell - <b>6 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-success'>Beginner</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                <p>This workshop walks you through how to work on a Haskell codebase from start to finish. Everything from starting a project, standard tools and libraries, testing from scratch, benchmarking from scratch and the development lifecycle will be discussed.</p>
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                Professional Weirdo, more at <a href='https://cs-syd.eu' target='_blank'>https://cs-syd.eu</a>
+              </div>
+            </div>
+          </div>
+
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Justin Woo:</h4>
+              <h4 class='title'>Full Stack PureScript - <b>4 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-success'>Beginner</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                <p>In this talk, Justin will start by going through the PureScript language, both in the type level and what the generated JavaScript code looks like. From there, the sessions will go through how to work with the intersection of the Foreign Function Interface of PureScript and types, in order to help users learn how to write full stack applications in PureScript on the browser and Node.js.</p>
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                Justin is an American in Finland. He has been using PureScript at work for over two years, deploying to browsers, AWS, and more. Justin is best known not for his PureScript ecosystem work or educational blog posts, but for his memes on Twitter.
+              </div>
+            </div>
+          </div>
+
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Maciej Kowalski:</h4>
+              <h4 class='title'>Introduction to ELM - <b>6 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-success'>Beginner</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                <p>During this workshop we will solve a single problem: building a Reliable, Scalable, Maintainable SPA (single page application).
+Or we will learn how to go from 75K+ React Beast, that is flaky, builds slow, size >1Mb, and scares away newcomers (me), to a "yay I can go to work" Elm app</p>
+
+<p>Four months ago I joined a startup and I very much enjoy the work.
+During this short period we developed 50k+ line backend service, with 1000+ tests that take &lt;2m to run, that is a pleasure to work with, refactor and extend.</p>
+
+<p>Sadly the frontend 75k+ line app we developed was a problem for business, and developers.
+The biggest pains it has (imho) are:</p>
+<ul>
+  <li>build times ( CI takes 4x 15-20min ).</li>
+  <li></li>
+  <li>production errors (undefined is not an object, null is not an object and even more hairier ones).</li>
+  <li>typeless (pure js) -> refactoring is not an option.</li>
+  <li>1.5Mb + bundle sizes.</li>
+  <li>i hate this code feeling.</li>
+  <li>what does this application do? (hard to tell without reading it all).</li>
+</ul>
+
+<p>If any/many of these sound like pains you have/had, I encourage you to join this workshop and learn a new way how these problem can be solved.
+During the workshop You will:</p>
+<ul>
+  <li>learn how to build a SPA in Elm.</li>
+  <li>learn how strong guarantees that Elm provides solve above pains.</li>
+  <li>as a sideeffect, gain a lot of FP knowledge.</li>
+  <li>see how Elm makes coding fun.</li>
+  <li>make you not want to go back to working in any other frontend technology.</li>
+</ul>
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                My passion for programming oscillates between frontend and backend. So I am the middleman.
+              </div>
+            </div>
+          </div>
+
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Michał Miszczyszyn:</h4>
+              <h4 class='title'>Introduction to ReasonML: build a cross-platform game - <b>4 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-success'>Beginner</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                ReasonML is a programming language enabling you to create fast applications in a type-safe manner. It compiles to native binaries (MacOS, Linux, Windows, Android, iOS) or to JavaScript! During this workshop you'll get to know ReasonML, learn the basics of functional programming, and create a cross-platform computer game! You'll learn everything on real-life examples, and you'll be able to see your progress as the game becomes more and more interactive when you solve the exercises.
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                Michał is a full-stack developer not afraid to use any technology. Currently working with X-Team. Entrepreneur, activist, blogger at typeofweb.com, speaker, and teacher. He's also a community organiser running meet.js Gdańsk and a few editions of meet.js Summit. Loves types, functional languages, pair programming, and sharing ideas.
+              </div>
+            </div>
+          </div>
+
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Alexander Granin:</h4>
+              <h4 class='title'>Designing real-world applications in Haskell with Free Monads - <b>5 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-intermediate'>Intermediate</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                <p>We need an understanding how to build real-world applications in Haskell. This is the biggest demand from the Haskell community according to the yearly surveys. We need design approaches, software architectures, best practices and design principles. We need not just a set of distinct ideas but rather a complete methodology of how to build complex applications that will be manageable, testable, simple. Many approaches emerged from the Haskell world recently: Final Tagless, ReaderT pattern, Service Handle pattern, effect systems. But my approach is based on Hierarchical Free Monads, my own methodology that I successfully used in several companies.</p>
+
+<p>In the workshop, you’ll learn how to use Free monads for layering your application, for designing subsystems, for separating interfaces and implementation. You’ll know how to add support of SQL DB, implement logging, add external services interaction. You’ll know how to create a REST servant-based backend that will be using your business logic for doing stuff. You’ll see that the Free monadic approach allows you to do functional and integration testing easily.</p>
+
+<p>For more info, consider my free book <a href='https://graninas.com/functional-design-and-architecture-book/'>Functional Design and Architecture</a>.</p>
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                Haskeller, speaker, researcher, author. Independent consultant, Haskell architect, developed my own methodology (Free-monad based) of writing complex Haskell applications. Used these ideas in real projects. Working on the book "Functional Design and Architecture" which described these ideas, giving talks at many international conferences. Currently consulting Juspay (Bangalore, India), a financial company. Their main codebase (200K likes of PureScript) is based on the Free monadic framework of my design.
+              </div>
+            </div>
+          </div>
+
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Michał Gajda:</h4>
+              <h4 class='title'>Higher Kinded Datatypes for Data Science - <b>6 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-intermediate'>Intermediate</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                <p>We have a growing number of libraries that use HKDTs to morph input types into type of parsers, or type of errors.
+That allows us to streamline typed data analytics pipeline, database building, and option parsing.</p>
+
+<p>The workshop will be formulated as a series of quests to analyze the input, and get nice graph representations.</p>
+
+<p>To keep advanced listeners on their toes, I will also introduce optional side-quests with Type Families, Generics, and `barbies` library for generic HKDT manipulation.</p>
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                Used Haskell to write fast bioinformatic parsers, count beans in financial industry, and analyze own source code too. Now promotes it as a tool of choice for Data Science.
+              </div>
+            </div>
+          </div>
+
+
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Chris Penner:</h4>
+              <h4 class='title'>A Practical Introduction to Optics - <b>2 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-intermediate'>Intermediate</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                <p>This talk will help you understand what Lenses, Folds, Traversals, Prisms and Isos are used for and how they fit together. You should feel comfortable getting work done with optics using a library of your choice by the end.</p>
+
+<p>Though it's recommended that you have an intermediate level of Haskell, this talk is suitable to folks completely new to optics or to those who've used them casually.</p>
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                Developer, teacher, aspiring opsimath, if Cunningham's law was a person. Author of the lenses book: <a href='https://leanpub.com/optics-by-example'>Optics By Example</a>
+              </div>
+            </div>
+          </div>
+
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Andrew Lelechenko:</h4>
+              <h4 class='title'>Low-level Haskell - <b>4 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-intermediate'>Intermediate</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                <p>In the age of dependent types low-level guts of Haskell are often overlooked. Most of us grew fascinated by polymorphism, functors and effect systems and never looked back. This talk is an invitation to go deeper, back to the very roots and discover primitive operations below.
+Participants will learn how to operate on unboxed data and primitive arrays, and combine them with the high-level code, aiming for better performance and - even more important - relaxing pressure on garbage collector. Topics covered:</p>
+
+<ul>
+  <li>Lifted and unlifted, boxed and unboxed data. Basics of levity polymorphism. Strict and lazy pattern-matching, understanding of GHC strictness analysis. Introduction to Core language.</li>
+  <li>Low-level arithmetic of fixed and arbitrary precision. Low-level comparisons. Allocations and how to avoid them. Writing bindings to `libgmp`. Examples: modular exponentiation, factorials.</li>
+  <li>Crash course of bit fiddling, covering reversals, population count, leading/trailing zeros, parallel deposit and extraction. How to handle different architectures? Examples: boolean polynomial.</li>
+  <li>Raw arrays and memory access. Mutable and immutable arrays. Introduction to `primitive` package. Atomic updates in multi-threaded environment. Examples: table lookups, bit sets.</li>
+</ul>
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                Andrew is a software developer from London with a strong background in mathematics and computer science. After receiving his PhD degree, he went into industry and ended up developing a compiler of the domain-specific language for finance and trading, implemented in Haskell. His main open-source contributions are mathematical libraries with a focus on performance.
+              </div>
+            </div>
+          </div>
+
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>M. Ian Graham:</h4>
+              <h4 class='title'>Rust for the Working Haskeller - <b>6 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-intermediate'>Intermediate</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                <p>Rust is a memory-safe system programming language that uses functional concepts for safety and productivity while maintaining performance similar to C and C++. In this workshop you'll learn how to use Haskell and Rust together to build blazingly fast programs while keeping your sanity.</p>
+
+<p>We'll start by covering the basics of Rust, how to call it from Haskell via FFI, and performance testing methods to make sure you're using the right language in the right place. Then we'll use a small game made in pure Rust to go hands-on with advanced topics including session types and parallel processing. You’ll leave the workshop unafraid to mix in a dash of Rust whenever your project could benefit.</p>
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                Ian is a 15-year game industry veteran and pragmatic functional programmer, currently freelancing in Tokyo. He specializes in online games and social systems, using languages like Haskell and Rust to bring some order to the chaos of game development.
+              </div>
+            </div>
+          </div>
+
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Marcin Szamotulski:</h4>
+              <h4 class='title'>Learning Haskell FFI based on Win32-network package - <b>2 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-intermediate'>Intermediate</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                <p>In this workshop we will learn how to use Haskell's ffi, how to share data between C code, and review a heavy architecture and implementation of Win32-network (which heavily uses FFI calls) package which implements asynchronous IO windows interface (also called Overlapped IO in Windows nomenclature) - so we'll get familiar with it too.  The workshop is dedicated to intermediate haskellers, or beginners who know basic C programming.  C programming is not a prerequisite, but knowledge of pointers will certainly help.</p>
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                Networking Lead at <a href='https://iohk.io' target='_blank'>IOHK</a>
+              </div>
+            </div>
+          </div>
+
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Philip Wadler:</h4>
+              <h4 class='title'>Programming Language Foundations in Agda - <b>6 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-advanced'>Advanced</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                   <p>This course is in two parts, each three hours long. Part I is an
+   introduction to formal methods in Agda, covering datatypes,
+   recursion, structural induction, indexed datatypes, dependent
+   functions, and induction over evidence; with focus on formal
+   definitions of naturals, addition, and inequality, and their
+   properties.  Part II is an introduction to formal models of
+   simply-typed lambda calculus in Agda, including reduction, type
+   rules, and progress and preservation, and (as a consequence)
+   evaluation of lambda terms. Part II depends on Part I, but Part I
+   can be skipped by those already familiar with Agda.</p>
+
+   <p>The textbook is freely available online:
+     <a href='https://plfa.inf.ed.ac.uk'>Programming Language Foundations in Agda</a></p>
+
+   <p>The book has been used for teaching by me at:
+     <ul style='list-style: none'>
+      <li>University of Edinburgh (Sep-Dec 2018, 2019)</li>
+      <li>Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio) (Mar-Jul 2019)</li>
+      <li>University of Padova (Jun 2019)</li>
+      <li>ICFT Tutorial (Sep 2019)</li>
+    </ul>
+   and by others at
+    <ul style='list-style: none'>
+     <li>University of Vermont</li>
+     <li>Google Seattle.</li>
+    </ul>
+   The book is described in a paper (of the same title) at the XXI
+   Brazilian Symposium on Formal Methods, 28--30 Nov 2018, which is
+   available here:
+     <a href='http://homepages.inf.ed.ac.uk/wadler/topics/agda.html#sbmf'>http://homepages.inf.ed.ac.uk/wadler/topics/agda.html#sbmf</a>
+   The paper won the SBMF 2018 Best Paper Award, 1st Place.</p>
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                Philip Wadler is Professor of Theoretical Computer Science at the University of Edinburgh and Senior Research Fellow at IOHK. He is an ACM Fellow, a Fellow of the Royal Society of Edinburgh, and editor-in-chief of Proceedings of the ACM for Programming Languages. He is past chair of ACM SIGPLAN, past holder of a Royal Society-Wolfson Research Merit Fellowship, winner of the SIGPLAN Distinguished Service Award, and a winner of the POPL Most Influential Paper Award. Previously, he worked or studied at Stanford, Xerox Parc, CMU, Oxford, Chalmers, Glasgow, Bell Labs, and Avaya Labs, and visited as a guest professor in Copenhagen, Sydney, and Paris. He has an h-index of over 70 with more than 25,000 citations to his work, according to Google Scholar. He contributed to the designs of Haskell, Java, and XQuery, and is co-author of Introduction to Functional Programming (Prentice Hall, 1988), XQuery from the Experts (Addison Wesley, 2004), Generics and Collections in Java (O'Reilly, 2006), and Programming Language Foundations in Agda (2018). He has delivered invited talks in locations ranging from Aizu to Zurich.
+              </div>
+            </div>
+          </div>
+
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Krzysztof Gogolewski:</h4>
+              <h4 class='title'>The type system of GHC - <b>4 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-advanced'>Advanced</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                <p>How does the type checker of GHC work under the hood?
+
+I will discuss the basic rules, describe the multitude of extensions and experiments added over the years and give some ideas about the future.</p>
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                Software engineer at Tweag, working on linear types.
+              </div>
+            </div>
+          </div>
+
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Chris Penner:</h4>
+              <h4 class='title'>Implementing Profunctor Optics - <b>2 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-advanced'>Advanced</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                <p>Ever wonder how optics actually work behind the scenes? This talk is a friendly introduction to the machinery behind implementing a profunctor optics library. We'll also touch on the Van Laarhoven optics encoding along the way.</p>
+
+<p>It's recommended you be comfortable <b>using</b> optics to perform simple tasks. The "Practical Introduction to Optics"  workshop should prepare you for this workshop.</p>
+
+<p>Though it's not strictly necessary, it's recommended that you look over the Contravariant Functor and Profunctor typeclasses before attending.</p>
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                Developer, teacher, aspiring opsimath, if Cunningham's law was a person. Author of the lenses book: <a href='https://leanpub.com/optics-by-example'>Optics By Example</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class='talk'>
+            <div class='header'>
+              <h4 class='author'>Zans Mihejevs:</h4>
+              <h4 class='title'>Implementing a Dependently Typed Language from Scratch - <b>4 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-advanced'>Advanced</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                <p>In this talk I will develop a programming language based on Classical Logic, which allows explicit reasoning about the control flow of the program. The focus will be on the implementation issues that arise when developing a type system in Haskell, as well as the best practices for translating languages presented in type theory papers into Haskell code.
+Time allowing, I will also show the benefits of using Classical Logic for structuring programs with effectual computation.</p>
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                Functional programmer bridging the gap between programming language research and application.
+              </div>
+          </div>
+         </div>
+          <div class='talk'>
+
+            <div class='header'>
+              <h4 class='author'>Ramón Soto Mathiesen:</h4>
+              <h4 class='title'>Better software for Voting Machines - <b>4 hours</b></h4>
+              <div class='level'>
+                <span class='badge badge-advanced'>Advanced</span>
+              </div>
+            </div>
+
+            <div class='details closed'>
+              <h4>Abstract</h4>
+              <div class='abstract'>
+                <p>In a perfect world, we should never (EVER) have to rely on voting by electronic means, as we sadly, haven't found any solution that is more trustworthy and secure than the traditional framework of pen and paper combined with people, of different backgrounds and political views, to count votes.</p>
+
+<p>Given that more and more countries are pushing for electronic voting, to reduce the cost of this process, but for the most, not always getting it right from either of the four pillars of voting: Functionality, Security, Resilience and Trust seen from the perspectives of Law, Society and Technology.</p>
+
+<p>We would therefore like to provide a "real" open source implementation, copyleft licensed, that doesn't need to be hidden under a "legal wall" as for example a solution provided by the Postal service of a country known for its watches and chocolate. The approach will be based on the Principle of Least Privilege (PoLP), since Haskell is among the very few programming languages that can enforce this at compile-time, which should provide more trustable and auditable software.</p>
+              </div>
+
+              <h4>About the speaker</h4>
+              <div class='speaker'>
+                A passionate computer scientist, with flair for functional programming languages and business, that advocates for: correctness, code-quality and high-standards. Ramón seem to have discovered his particular Holy Grail in SAFE Haskell, which he tries to use to make software that can comply with the EU GDPR, by technical means.
+              </div>
+          </div>
+         </div>
       </div>
     </div>
+  </div>
 
     <div class='organizers'>
       <div class='container'>
